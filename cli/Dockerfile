@@ -10,6 +10,9 @@ LABEL "com.github.actions.description"="Wraps the Mint CLI to enable common comm
 LABEL "com.github.actions.icon"="git-commit"
 LABEL "com.github.actions.color"="gray-dark"
 
+RUN apk update && apk upgrade && \
+    apk add --no-cache bash git openssh file imagemagick
+
 RUN wget -O mint https://github.com/mint-lang/mint/releases/download/0.3.1/mint-0.3.1-linux
 RUN chmod +x mint
 
