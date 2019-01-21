@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 LABEL repository="http://github.com/mint-lang/actions"
 LABEL homepage="http://github.com/mint-lang/actions/cli"
 LABEL maintainer="Mint"
